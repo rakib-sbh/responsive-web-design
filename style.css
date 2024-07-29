@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark-background: #000;
+  --ligh-background: #fff;
+}
+
+.check {
+  background-color: var(--ligh-background);
+  color: black;
+}
+
 .special {
   width: 90%;
   height: 300px;

@@ -1,0 +1,15 @@
+body {
+  color: green;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+.wrapper {
+  border: 2px solid red;
+}
+
+.special {
+  width: 200px;
+  height: 200px;
+  background-color: currentColor;
+  transform: scale(0.5, 0.5);
+}

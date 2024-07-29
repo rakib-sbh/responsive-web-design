@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.animation {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  animation-name: rupom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  margin: 200px;
+  position: relative;
+}
+
+@keyframes rupom {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  25% {
+    top: 0;
+    left: 200px;
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+}
