@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.one {
+  background-color: aqua;
+  height: 100px;
+}
+.two {
+  background-color: yellow;
+  height: 120px;
+}
+
+.three {
+  background-color: blueviolet;
+  height: 160px;
+}
+
+.four {
+  background-color: violet;
+  height: 100px;
+}
+
+.five {
+  background-color: green;
+  width: 250px;
+  height: 120px;
+}
+
+.six {
+  background-color: brown;
+}
+
+.item {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 5rem;
+  margin: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 70vh;
+}

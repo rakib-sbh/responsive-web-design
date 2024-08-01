@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+p:nth-of-type(even) {
+  background-color: salmon;
+}
+
+p:nth-of-type(odd) {
+  background-color: lightskyblue;
+}
+
+p:nth-of-type(1) {
+  background-color: lightgreen;
+}
+
+p:nth-of-type(2) {
+  background-color: indianred;
+}
+
+p:nth-of-type(3) {
+  background-color: slateblue;
+}
+
+p:nth-of-type(4) {
+  background-color: yellow;
+}
+
+p:nth-of-type(5) {
+  background-color: lightgreen;
+}
+p:nth-of-type(6) {
+  background-color: indianred;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Challenge</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      .container-1-1 {
+        display: flex;
+        flex-basis: 50%;
+        flex-wrap: wrap;
+      }
+      .container-1-2 {
+        display: flex;
+        flex-basis: 50%;
+      }
+      .item {
+        flex-grow: 1;
+        flex-shrink: 1;
+        color: red;
+        font-size: 3rem;
+        text-align: center;
+      }
+      .a {
+        flex-basis: 50%;
+        background-color: pink;
+      }
+      .b {
+        flex-basis: 50%;
+        background-color: lightgreen;
+      }
+      .d {
+        flex-basis: 100%;
+        background-color: indigo;
+      }
+      .c {
+        background-color: skyblue;
+      }
+
+      /* Media Query For Mobile Device */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .a {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-1-1">
+        <div class="item a">A</div>
+        <div class="item b">B</div>
+        <div class="item d">D</div>
+      </div>
+      <div class="container-1-2">
+        <div class="item c">C</div>
+      </div>
+    </div>
+  </body>
+</html>
