@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+    <link rel="stylesheet" href="list.css" />
+  </head>
+  <body>
+    <div>
+      <label for="awardWon">Award Won</label>
+      <input type="text" id="awardWon" name="awardWon" list="awards" />
+      <datalist id="awards">
+        <select>
+          <option value="Best Picture"></option>
+          <option value="Best Director"></option>
+          <option value="Best Adapted Screenplay"></option>
+          <option value="Best Original Screenplay"></option>
+        </select>
+      </datalist>
+    </div>
+    <div>
+      <label for="color">Input Your Favourite Color</label>
+      <input type="color" />
+    </div>
+    <div>
+      <input type="date" />
+    </div>
+    <div>
+      <input type="month" />
+    </div>
+    <div>
+      <input type="datetime-local" required />
+    </div>
+    <div>
+      <input type="week" />
+    </div>
+    <div>
+      <input
+        type="range"
+        min="1"
+        max="20"
+        value="17"
+        onchange="showValue(this.value)"
+        style="width: 100%"
+      />
+    </div>
+    <span>5</span>
+    <script>
+      function showValue(value) {
+        document.querySelector("span").innerHTML = value;
+      }
+    </script>
+  </body>
+</html>
